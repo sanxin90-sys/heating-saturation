@@ -1,0 +1,25 @@
+
+== Jaru: fit [2006], val 2008, test [2005, 2009, 2010]; rows fit 16802, val 17559, test 37362
+site              model  seed  r2_test    dR2  ci_lo  ci_hi
+Jaru         relax+harm    -1   0.6247 0.0000    NaN    NaN
+Jaru sat+harm (b=0.002)    -1   0.6431 0.0184  0.016  0.021
+
+== K34: fit [2002, 2003, 2004], val 2005, test [2006, 2007, 2008, 2009]; rows fit 52342, val 17386, test 69610
+site              model  seed  r2_test    dR2  ci_lo  ci_hi
+ K34         relax+harm    -1   0.6010 0.0000    NaN    NaN
+ K34 sat+harm (b=0.002)    -1   0.6283 0.0273 0.0254 0.0295
+
+== Sa1: fit [2002, 2003], val 2004, test [2009, 2010, 2011]; rows fit 31250, val 15756, test 39932
+site              model  seed  r2_test    dR2  ci_lo  ci_hi
+ Sa1         relax+harm    -1   0.6020 0.0000    NaN    NaN
+ Sa1 sat+harm (b=0.003)    -1   0.6231 0.0211 0.0176  0.025
+
+== Ma3: fit [2009, 2010], val 2011, test [2013, 2018]; rows fit 31564, val 16856, test 30294
+site              model  seed  r2_test    dR2  ci_lo  ci_hi
+ Ma3         relax+harm    -1   0.6197 0.0000    NaN    NaN
+ Ma3 sat+harm (b=0.003)    -1   0.6464 0.0267 0.0224 0.0314
+
+== Npw: fit [2014], val 2015, test [2016, 2017]; rows fit 5576, val 14999, test 19907
+site              model  seed  r2_test   dR2  ci_lo  ci_hi
+ Npw         relax+harm    -1   0.6421 0.000    NaN    NaN
+ Npw sat+harm (b=0.003)    -1   0.6672 0.025 0.0209  0.029

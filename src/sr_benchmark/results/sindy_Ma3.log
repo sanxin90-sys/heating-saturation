@@ -1,0 +1,44 @@
+months dropped for flat wind cycle: []
+weak rows per year: {2009: 3431, 2010: 3825, 2011: 3941, 2013: 3497, 2018: 3703}
+
+Part 1, R1/R2: Ma3, train [2009, 2010, 2011], test [2013, 2018]
+ season         model  n_test  r2_test     dR2   ci_lo   ci_hi  dR2_2013  dR2_2018
+   all          harm    7200   0.5116 -0.0981 -0.1116 -0.0852   -0.0958   -0.1002
+   all    relax+harm    7200   0.6096  0.0000  0.0000  0.0000    0.0000    0.0000
+   all      sat+harm    7200   0.6330  0.0234  0.0178  0.0286    0.0224    0.0243
+   all sat+wind+harm    7200   0.6415  0.0319  0.0271  0.0373    0.0302    0.0335
+   all    sindy+harm    7200   0.6802  0.0706  0.0473  0.0879    0.0591    0.0817
+   wet          harm    3339   0.4785 -0.0987 -0.1148 -0.0823   -0.1008   -0.0973
+   wet    relax+harm    3339   0.5772  0.0000  0.0000  0.0000    0.0000    0.0000
+   wet      sat+harm    3339   0.6088  0.0316  0.0241  0.0398    0.0355    0.0290
+   wet sat+wind+harm    3339   0.6218  0.0446  0.0356  0.0536    0.0480    0.0423
+   wet    sindy+harm    3339   0.6757  0.0985  0.0812  0.1173    0.0910    0.1037
+   dry          harm    2686   0.5522 -0.0884 -0.1126 -0.0684   -0.0959   -0.0805
+   dry    relax+harm    2686   0.6406  0.0000  0.0000  0.0000    0.0000    0.0000
+   dry      sat+harm    2686   0.6616  0.0210  0.0149  0.0269    0.0177    0.0245
+   dry sat+wind+harm    2686   0.6666  0.0259  0.0181  0.0340    0.0218    0.0304
+   dry    sindy+harm    2686   0.7125  0.0718  0.0558  0.0898    0.0725    0.0711
+
+Part 1, R3: 24-h free runs, Ma3 test years pooled
+         model  n_days  blowups  mean_rmse   dRMSE   ci_lo  ci_hi
+         harm     512        0     1.6094  0.5023  0.4406 0.5638
+   relax+harm     512        0     1.1071  0.0000  0.0000 0.0000
+     sat+harm     512        0     1.0977 -0.0094 -0.0256 0.0076
+sat+wind+harm     512        0     1.0970 -0.0102 -0.0289 0.0087
+   sindy+harm     512        0     1.1037 -0.0034 -0.0335 0.0278
+
+R4 / coefficients
+                  fit     b      lam        A     kappa
+           Ma3 train 0.002 0.095102 3.905969 -0.000269
+Ma3 refit 2013 alone 0.002 0.112854 4.198531 -0.000335
+Ma3 refit 2018 alone 0.002 0.083919 4.144362 -0.000330
+Jaru train 2006+2008 0.001 0.085353 6.892506 -0.000471
+
+Part 2, transfer Jaru -> Ma3 (no refit), weak R2 on test years
+         model  r2_site_test_jaru_coefs  r2_site_test_local_fit
+   relax+harm                   0.5483                  0.6096
+     sat+harm                   0.5654                  0.6330
+sat+wind+harm                   0.5792                  0.6415
+
+VERDICT M1 {'R1': True, 'R2': True, 'R3': False, 'R4': True}
+VERDICT sat+harm {'R1': True, 'R2': True, 'R3': False}

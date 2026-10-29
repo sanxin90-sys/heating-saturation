@@ -218,3 +218,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- project-specific ---
+# Full AmeriFlux downloads (see README, "Data"); not redistributed here
+RAW/
+*.zip
+
+# Site spreadsheet supplied by the tower team (not public)
+*.xlsx
+
+# PySR / Julia run artefacts
+hall_of_fame*.csv*
+outputs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Reference logs of the runs reported in the manuscript are kept
+!src/sr_benchmark/results/*.log

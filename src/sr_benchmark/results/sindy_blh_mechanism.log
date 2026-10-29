@@ -1,0 +1,11 @@
+site  n_test  median_hday_m  spearman_SW_h  spearman_p  b_sat  r2_relax+harm  r2_sat+harm  r2_BL+harm  r2_BL+sat+harm  P1_dR2_BL_vs_relax  P1_ci_lo  P1_ci_hi  gain_sat_over_relax  gain_sat_over_BL gain_sat_over_BL_ci  frac_sat_left
+Jaru    9254      1274.4131         0.5525         0.0  0.002         0.5476       0.5669      0.4795          0.5698             -0.0682   -0.0771   -0.0591               0.0193            0.0904    [0.0801; 0.0999]         4.6834
+ K34   17218       986.2732         0.6239         0.0  0.002         0.5591       0.5836      0.4992          0.5838             -0.0599   -0.0653   -0.0544               0.0245            0.0846    [0.0789; 0.0906]         3.4512
+ Sa1    8417       863.6471         0.4616         0.0  0.002         0.6512       0.6718      0.6072          0.6731             -0.0440   -0.0517   -0.0366               0.0206            0.0659    [0.0571; 0.0744]         3.2029
+ Ma3    7554      1046.1345         0.7129         0.0  0.003         0.5912       0.6131      0.5265          0.6132             -0.0647   -0.0736   -0.0561               0.0220            0.0868    [0.0778; 0.0962]         3.9510
+ Npw    4232      1278.2789         0.5145         0.0  0.003         0.6577       0.6800      0.6203          0.6813             -0.0374   -0.0474   -0.0273               0.0223            0.0610    [0.0471; 0.0739]         2.7347
+
+P1 per site: {'Jaru': False, 'K34': False, 'Sa1': False, 'Ma3': False, 'Npw': False}
+P2 per site: {'Jaru': False, 'K34': False, 'Sa1': False, 'Ma3': False, 'Npw': False}
+VERDICT: rejected
+between sites: spearman(b, median h) = SignificanceResult(statistic=np.float64(0.5773502691896257), pvalue=np.float64(0.3080680092503572))

@@ -1,0 +1,3 @@
+site,model,w0,n_days,mean_rmse,dRMSE_vs_relax+harm,ci_lo,ci_hi
+Npw,relax+harm,,51,2.7952568475333015,0.0,0.0,0.0
+Npw,sat+harm,,51,2.7457797563132034,-0.049477091220098385,-0.2156616376734408,0.17327720051701134

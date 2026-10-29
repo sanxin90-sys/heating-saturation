@@ -2,7 +2,7 @@
 
 This archive reproduces every number, table and figure of the manuscript from AmeriFlux FLUXNET-1F
 data (v1.3_r1) and ERA5 boundary-layer height. Status of the archive: prepared 2026-10-29 for review;
-a persistent DOI (e.g. Zenodo) has not been minted yet.
+archived on Zenodo, https://doi.org/10.5281/zenodo.23755930.
 
 ## Quick start
 

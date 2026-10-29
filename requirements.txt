@@ -7,4 +7,5 @@ sympy==1.14.0
 openpyxl==3.1.5
 matplotlib==3.11.2
 pillow==12.3.0
-# optional, only for src/pysr_sites.py (needs Julia): pysr  (version used: to be filled in by the authors)
+# optional, only for src/pysr_sites.py (needs Julia; runs used Julia 1.11.9):
+# pysr==2.7.0
